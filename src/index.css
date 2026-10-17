@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark-bg text-gray-300 font-sans antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .bento-card {
+    @apply bg-dark-card border border-dark-border rounded-3xl p-8 hover:border-accent/40 transition-all duration-300 relative overflow-hidden;
+  }
+  
+  .glow-effect {
+    @apply absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold text-white tracking-tight mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-accent font-semibold tracking-wider uppercase text-sm mb-2 block;
+  }
+}
