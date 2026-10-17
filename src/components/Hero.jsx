@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative hidden lg:block"
+          className="relative w-full max-w-sm mx-auto lg:ml-auto mt-10 lg:mt-0"
         >
           {/* Decorative Background Glow */}
           <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent rounded-3xl blur-2xl transform rotate-3" />
